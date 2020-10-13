@@ -36,9 +36,18 @@ public class Calculator {
         JButton minusBtn = new JButton("-");
         minusBtn.addActionListener(abListener);
         bottom.add(minusBtn);
+        JButton multiplicationBtn = new JButton("*");
+        multiplicationBtn.addActionListener(abListener);
+        bottom.add(multiplicationBtn);
+        JButton divisionBtn = new JButton("/");
+        divisionBtn.addActionListener(abListener);
+        bottom.add(divisionBtn);
         JButton cancelBtn = new JButton("C");
+        cancelBtn.addActionListener(abListener);
         bottom.add(cancelBtn);
+        ActionSubmitHandleListener ashListener = new ActionSubmitHandleListener(outField);
         JButton submitBtn = new JButton("Submit");
+        submitBtn.addActionListener(ashListener);
         bottom.add(submitBtn);
 
 

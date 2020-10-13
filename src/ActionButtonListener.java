@@ -17,8 +17,15 @@ public class ActionButtonListener implements ActionListener {
         String val = sb.append(outField.getText())
                 .append(jButton.getText())
                 .toString();
+        if (jButton.getText().equals("C")){
+            outField.setText("");
+        }else{
         outField.setText(val);
+        }
         sb.setLength(0);
     }
+
+
+
 }
 
